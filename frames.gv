@@ -1,0 +1,32 @@
+digraph G {
+"world" -> "red/ball"[label="Broadcaster: /gazebo\nAverage rate: 200.210 Hz\nMost recent transform: 4303.090 ( 0.004 sec old)\nBuffer length: 4.760 sec\n"];
+"map" -> "map_ned"[label="Broadcaster: /red/mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4303.094 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "odom_ned"[label="Broadcaster: /red/mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4303.094 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base_link_frd"[label="Broadcaster: /red/mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4303.094 sec old)\nBuffer length: 0.000 sec\n"];
+"red/base_link" -> "red/base_link_inertia"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4303.094 sec old)\nBuffer length: 0.000 sec\n"];
+"world" -> "red/base_link"[label="Broadcaster: /gazebo\nAverage rate: 50.211 Hz\nMost recent transform: 4303.086 ( 0.008 sec old)\nBuffer length: 4.740 sec\n"];
+"red/camera_box" -> "red/camera"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4303.094 sec old)\nBuffer length: 0.000 sec\n"];
+"red/base_link" -> "red/camera_box"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4303.094 sec old)\nBuffer length: 0.000 sec\n"];
+"red/base_link_inertia" -> "red/electromagnet_actuator"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4303.094 sec old)\nBuffer length: 0.000 sec\n"];
+"red/electromagnet_actuator" -> "red/electromagnet_bar"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 4303.094 sec old)\nBuffer length: 0.000 sec\n"];
+"red/base_link" -> "red/rotor_0"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 50.190 Hz\nMost recent transform: 4303.073 ( 0.021 sec old)\nBuffer length: 4.742 sec\n"];
+"red/base_link" -> "red/rotor_1"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 50.190 Hz\nMost recent transform: 4303.073 ( 0.021 sec old)\nBuffer length: 4.742 sec\n"];
+"red/base_link" -> "red/rotor_2"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 50.190 Hz\nMost recent transform: 4303.073 ( 0.021 sec old)\nBuffer length: 4.742 sec\n"];
+"red/base_link" -> "red/rotor_3"[label="Broadcaster: /red/robot_state_publisher\nAverage rate: 50.190 Hz\nMost recent transform: 4303.073 ( 0.021 sec old)\nBuffer length: 4.742 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 4303.094"[ shape=plaintext ] ;
+ }->"world";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 4303.094"[ shape=plaintext ] ;
+ }->"map";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 4303.094"[ shape=plaintext ] ;
+ }->"odom";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 4303.094"[ shape=plaintext ] ;
+ }->"base_link";
+}
